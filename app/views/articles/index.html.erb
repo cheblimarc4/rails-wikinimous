@@ -1,0 +1,11 @@
+<div class = "container m-3">
+  <div class = "row">
+    <div class ="col-sm-8 offset-sm-2">
+      <% @articles.each do |article| %>
+        <article class="mb-3">
+          <h2 class="text-primary"><%= link_to article.title, article_path(article) %></h2>
+        </article>
+      <% end %>
+    </div>
+  </div>
+</div>
